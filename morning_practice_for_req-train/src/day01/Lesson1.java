@@ -21,7 +21,21 @@ public class Lesson1 {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
-
+		//変数numに12を代入
+		int num = 12;
+		
+		double dob = 1.6;
+		
+		boolean judge = true;
+		
+		String word = "こんにちは";
+		
+		System.out.println("出力します");
+		System.out.println(num);
+		System.out.println(dob);
+		System.out.println(word);
+		System.out.println(judge);
+				
 	}
 
 }
