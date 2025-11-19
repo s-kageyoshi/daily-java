@@ -34,12 +34,12 @@ public class Lesson4 {
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("imput number? >>");
+		System.out.print("imput number? >>");
 		String str =reader.readLine();
 		int num = Integer.parseInt(str);
          
 		if (num%3 == 0 && num%5 ==0) {
-			System.out.println("FizzBu30zz");
+			System.out.println("FizzBuzz");
 		}else if(num%3 ==0){
 			System.out.println("Fizz");
 		}else if(num%5 == 0){
