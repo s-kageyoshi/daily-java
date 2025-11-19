@@ -21,7 +21,18 @@ public class Lesson6 {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
-
+		String[] name = {"鈴木","田中","佐藤"};
+		String nameoutput = "";
+		
+		for (int i = 0;i < name.length ; i++) {
+			nameoutput += name[i];
+			
+			if (i != name.length - 1) {
+				nameoutput += ",";
+			}
+		}
+		System.out.print(nameoutput);
+		
 	}
 
 }
