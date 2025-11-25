@@ -69,6 +69,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
+		Member[] members = new Member[3];
+		members[0] = new Member(1,"人見");
+		members[1] = new Member(2,"植木");
+		members[2] = new Member(3,"吉崎");
+		
+		for(Member MemberManager : members) {
+			MemberManager.show();
+		}
+			
+			int id = 1;
+			String Newname = "三浦";
+			
+			MemberManager.update(members,id,Newname);
+			
+			for(Member MemberManager : members) {
+				MemberManager.show();
+			}
+			
+			
+			
+		
+		
 
 	}
 
