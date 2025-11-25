@@ -53,13 +53,33 @@
 //money:12345
 
 package day06.q02;
-
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Main {
 
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
+		System.out.println("預金者情報を登録します。");
+		BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("input name? >>");
+		String str1 = br.readLine();
+		System.out.print("input money? >>");
+		String str2 =br.readLine();
+		int num = Integer.parseInt(str2);
+		System.out.println("銀行に預金者情報を登録します。");
+		
+		Depositor depositor = new Depositor();
+		depositor.setName(str1);
+		depositor.setMoney(num);
+		
+		Bank bank = new Bank();
+		bank.setDepositor(depositor);
+		bank.showData();
+		
+		
+		
 
 	}
 
