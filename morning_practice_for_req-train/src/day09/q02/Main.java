@@ -40,6 +40,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*ここから記入*/
+		Instrument inst[] = new Instrument[2];
+		inst[0] = new Piano("Yamaha");
+		inst[1] = new Drums("Pearl");
+		for (Instrument ist:inst) {
+			System.out.println(ist);
+			ist.playMusic();
+		}
 
 	}
 

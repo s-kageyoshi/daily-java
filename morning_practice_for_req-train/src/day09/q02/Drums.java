@@ -1,12 +1,12 @@
 package day09.q02;
 
-public class Drums {
+public class Drums extends Instrument {
 
-	private String maker;
 	private String constitution;// ドラムの構成
 
 	// Instrumentのコンストラクタを呼び出し
 	public Drums(String maker) {
+		super(maker);
 		this.constitution = "バスドラム・スネアドラム・タムタム・シンバルのセットです";
 	}
 

@@ -1,12 +1,12 @@
 package day09.q02;
 
-public class Piano {
+public class Piano extends Instrument {
 
 	private String maker;
 	private double weight;
 
 	public Piano(String maker) {
-
+		super(maker);
 		this.maker = maker;
 		weight = 80.5;
 	}
