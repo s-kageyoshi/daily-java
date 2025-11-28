@@ -34,8 +34,16 @@ package day04;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+/**
+ * 練習問題第７問
+ * @author S_Kageyoshi
+ */
 public class Lesson7 {
-
+	/**
+	 * 
+	 * @param args mainメソッドの引数
+	 * @throws IOException 負の数
+	 */
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
 		int num = 0;
