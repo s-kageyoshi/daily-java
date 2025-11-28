@@ -23,10 +23,41 @@
 
 package day10.q02;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		List<Integer>list = new ArrayList<>();
+		int sum = 0;
+		
+		try {
+		System.out.println("1から任意の値までの合計を求めます");
+		System.out.print("input num? >>");
+		String str = br.readLine();
+		int num = Integer.parseInt(str);
+		
+		for(int i = 1; i <= num; i++ ) {
+			list.add(i);
+			sum+=i;
+		}
+		System.out.println("1から"+ num + "までの合計は"+ sum);
+		System.out.println("listの要素を表示します");
+		
+		for(Integer integer : list) {
+			System.out.println(integer);
+		}
+		}catch(NumberFormatException e) {
+			System.out.println("整数以外が含まれています");
+			e.printStackTrace();
+		}
+		
 	}
 
 }
